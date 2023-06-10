@@ -59,22 +59,17 @@ a {
 }
 
 .button-5:hover {
-background-color: #1e293b;
-color: #fff;
+    background-color: #1e293b;
+    color: #fff;
 }
-
-
-
-
-.intro {
-    position: relative; 
-} 
 
 .intro h3 {
     font-family: 'mulish';
 }
 
 .intro {
+    position: relative; 
+    padding: 15em 24% 12em;
     display:table;
     width:100%;
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) ), url('../images/polish.jpeg');
@@ -85,13 +80,11 @@ color: #fff;
 }
 
 .intro-container {
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
-.intro {
-    padding: 22em 24%;
-}
+
 .intro h1 {
     position: relative;
     font-size: 60px;
@@ -159,25 +152,37 @@ h2 {
     place-items: center;
 }
 
+
+
+
 .review-wrap {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     /* padding-top: calc(2rem + 1vmin); */
     width: 100%;
-    padding: 5em;
+    padding: 2em 0;
     background-color: #83b1e047;
+    justify-content: center;
+    text-align: center;
 }
 
+
+
+
+
+
+
+
 #name {
-    margin-bottom: calc(0.7rem + 0.5vmin);
-    font-size: calc(0.8rem + 0.5vmin);
-    letter-spacing: calc(0.1rem + 0.1vmin);
+    /* margin-bottom: calc(0.7rem + 0.5vmin); */
+    /* font-size: calc(0.8rem + 0.5vmin); */
+    /* letter-spacing: calc(0.1rem + 0.1vmin); */
     font-weight: bold;
     font-family: 'mulish';
     /* font-family: 'Noto Serif HK'; */
-    margin-top: 4em;
+    /* margin-top: 4em;*/
+    font-size: 1em;
 
 }
 
@@ -186,22 +191,25 @@ h2 {
     justify-content: center;
     align-items: center;
     font-size: 4.5em;
-    margin: -0.2em 0em -0.1em 0em;
+    margin: -0.2em 0em -0.4em 0em;
     }
     
 
 #description {
-    font-size: calc(1.5rem + 0.3vmin);
+    font-size: 1.2em;
     width: 70%;
     max-width: 40rem;
     text-align: center;
     /* margin-bottom: calc(1.4rem + 1vmin); */
     color: rgb(56, 56, 56);
-    line-height: 2rem;
+    /* line-height: 2rem; */
     font-family: 'Noto Serif HK';
     height: auto;
+    padding: 1.5em 0.5em;
 
 }
+
+
 
 .arrow {
     width: calc(1.4rem + 0.6vmin);
@@ -282,11 +290,12 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 0.5fr 1fr;
     justify-items: center;
-    padding: 0% 10% 5em;
+    padding: 0% 10%;
     line-height: 6em;
     align-items: center;
 
 }
+
 
 
 .about .line {
@@ -326,8 +335,11 @@ h2 {
 .book .container {
     text-align: center;
     line-height: 2.5em;
-    padding: 6em 0em;
+    padding: 4em 0em;
 }
+
+
+
 
 .book .fa-phone {
     font-size: 2.5em;
@@ -341,10 +353,13 @@ h2 {
     font-size: 1.5em;
     font-family: 'Noto Serif HK';
 }
+
 .book h2 {
-    font-size: 3em;
-    padding-bottom: 1em;
+    font-size: 2.4em;
+    padding-bottom: 0 1em;
 }
+
+
 
 .google-map {
     padding-bottom: 30em;
@@ -475,6 +490,10 @@ h2 {
     position:absolute;
     width: 100%;
 }
+
+.services {
+    font-size: 80%
+}
   
 
 .services h1, .gallery-heading h1, .contact h1 {
@@ -519,6 +538,74 @@ h2 {
 
 .price {
     font-weight: 900;
+}
+
+  /* Set the width and height of the gallery container */
+  .gallery-container {
+    width: 500px;
+    height: auto;
+  }
+
+  /* Style the gallery item */
+  .gallery-item {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  /* Style the gallery image */
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+
+
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /*Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #0973b1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /*  When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #012e58;
+  }
+   
+
+  #form {
+    padding: 5em 10%;
+}
+
+
+.contact-container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+.contact-container iframe {
+    position: relative;
+    height: 100%;
+}
+
+.contact-container .google-map {
+    padding: 0;
 }
 
 
@@ -571,17 +658,19 @@ h2 {
     }
 
 
+    .intro {
+        padding: 22em 24%;
 
+
+    }
+    .intro-container {
+        text-align: left;
+    }
 
     .about .container {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 5fr;
-        justify-items: center;
         padding: 0% 10% 5em;
-        line-height: 6em;
-        align-items: center;
-
     }
 
     .about .line {
@@ -620,6 +709,34 @@ h2 {
         line-height: 2.5em;
         padding: 6em 0em;
     }
+
+    
+    #description {
+        font-size: 1.5em;
+
+    }
+
+
+    .review-wrap {
+        padding: 5em;
+    }
+
+    .services {
+        font-size: 100%;
+    }
+
+        
+    .book .container {
+        padding: 6em 0em;
+    }
+
+
+
+    .book h2 {
+        font-size: 3em;
+        /* padding: 1em; */
+    }
+
 
 }
 

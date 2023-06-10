@@ -57,7 +57,7 @@
 
                 <h1>Tisha's Nails</h1>
                 <h3>NAIL SALON IN CLINTON, CT</h3>
-                <button class="button-5" role="button"><a href='services.html'> Book Now </a></button>
+                <button class="button-5" role="button"><a href='#book'> Book Now </a></button>
 
 
             </div>
@@ -160,15 +160,15 @@
                 //Select the side where you want to slide
                 function slide(side, personNumber) {
                   let reviewWrapWidth = reviewWrap.offsetWidth + "px";
-                  let descriptionHeight = description.offsetHeight + "px";
+                  // let descriptionHeight = description.offsetHeight + "px";
                   //(+ or -)
                   let side1symbol = side === "left" ? "" : "-";
                   let side2symbol = side === "left" ? "-" : "";
             
 
-                  setTimeout(() => {
-                    description.style.height = descriptionHeight;
-                  }, 100);
+                  // setTimeout(() => {
+                  //   description.style.height = descriptionHeight;
+                  // }, 100);
                   setTimeout(() => {
                     name.innerText = people[personNumber].name;
                   }, 200);
@@ -211,7 +211,7 @@
 
 
 
-        <div class="book" >
+        <div class="book" id="book">
             <div class = 'container'>
 
                 <!-- <i class="fa fa-phone" style="color: #4fb3e28f;"></i> -->
