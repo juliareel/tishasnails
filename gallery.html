@@ -29,12 +29,27 @@
                 <a href="index.html"> HOME </a>
                 <a href="index.html#about"> ABOUT </a>
                 <a href="services.html"> SERVICES </a>
-                <a class='current'  href="gallery.html"> GALLERY </a>
-                <a href="contact.html" id="last-link"> CONTACT  </a>
+                <a class='current' href="gallery.html"> GALLERY </a>
+                <a href="contact.html"> CONTACT </a>
             </div>
             
         </ul>
     </nav>
+
+    <script>
+        var lastScrollTop;
+        navbar = document.getElementById('navbar');
+        window.addEventListener('scroll',function(){
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if(scrollTop > lastScrollTop){
+                navbar.style.top='-150px';
+            }
+            else{
+                navbar.style.top='0';
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
 
 
     <main class="gallery">
