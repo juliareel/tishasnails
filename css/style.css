@@ -96,7 +96,7 @@ a:hover {
 }
 
 .intro h3 {
-    font-family: 'mulish';
+    font-family: 'Noto Serif HK';
     font-weight: 100;
 }
 
@@ -144,7 +144,7 @@ a:hover {
     font-family: 'Noto Serif HK'
 } */
 
-.intro h1, .intro h3, .intro button {
+.intro h1, .intro h3, .intro button, .intro img {
     animation: fadeIn 3s;
 
 }
@@ -174,7 +174,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding-bottom: 10em;
-    padding: 2em 10em 10em 10em;
+    padding: 2em 15% 10em 15%;
 }
 
 
@@ -594,7 +594,7 @@ h2 {
 .services-heading, .gallery-heading, .contact-heading {
     /* background-color: rgb(230, 240, 247); */
     background-color: rgba(255, 255, 255, 0.4);
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/DSC_0293.JPG');
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('../images/293.JPG');
 
     text-align: center;
     padding: 10em 0 6em;
@@ -832,6 +832,10 @@ h2 {
     opacity: 1;
   }
 
+  .about span:hover {
+    color: purple;
+  }
+
 
 @media screen and (min-width: 768px){
     .navbar {
@@ -895,7 +899,7 @@ h2 {
     .about .container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 5fr;
-        padding: 0% 10% 5em;
+        padding: 0% 10% 10em;
     }
 
     /* .about .line {
@@ -966,7 +970,7 @@ h2 {
 
     .services-heading, .gallery-heading, .contact-heading {
 
-        padding: 5em 0 6em;
+        padding: 7em 0 8em;
     }
 
     .contact-container {
